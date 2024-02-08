@@ -48,7 +48,7 @@ export function App() {
     : notes;
 
   return (
-    <div className="mx-auto my-12 max-w-6xl space-y-6">
+    <div className="mx-auto my-12 max-w-6xl space-y-6 px-5">
       <header>
         <img src={logo} alt="nlw expert" />
       </header>
@@ -64,7 +64,7 @@ export function App() {
 
       <div className="h-px bg-slate-700" />
 
-      <div className="grid grid-cols-3 auto-rows-[250px] gap-6">
+      <div className="grid grid-cols-1 md:grid-col-2 lg:grid-cols-3 auto-rows-[250px] gap-6">
         <NewNoteCard onNoteCreated={onNoteCreated} />
 
         {filteredNotes.map((note) => (
